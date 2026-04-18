@@ -1,0 +1,13 @@
+D:\EduProctor\src\EduProctor.Core\bin\Debug\net8.0\EduProctor.Core.deps.json
+D:\EduProctor\src\EduProctor.Core\bin\Debug\net8.0\EduProctor.Core.dll
+D:\EduProctor\src\EduProctor.Core\bin\Debug\net8.0\EduProctor.Core.pdb
+D:\EduProctor\src\EduProctor.Core\obj\Debug\net8.0\EduProctor.Core.csproj.AssemblyReference.cache
+D:\EduProctor\src\EduProctor.Core\obj\Debug\net8.0\EduProctor.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\EduProctor\src\EduProctor.Core\obj\Debug\net8.0\EduProctor.Core.AssemblyInfoInputs.cache
+D:\EduProctor\src\EduProctor.Core\obj\Debug\net8.0\EduProctor.Core.AssemblyInfo.cs
+D:\EduProctor\src\EduProctor.Core\obj\Debug\net8.0\EduProctor.Core.csproj.CoreCompileInputs.cache
+D:\EduProctor\src\EduProctor.Core\obj\Debug\net8.0\EduProctor.Core.sourcelink.json
+D:\EduProctor\src\EduProctor.Core\obj\Debug\net8.0\EduProctor.Core.dll
+D:\EduProctor\src\EduProctor.Core\obj\Debug\net8.0\refint\EduProctor.Core.dll
+D:\EduProctor\src\EduProctor.Core\obj\Debug\net8.0\EduProctor.Core.pdb
+D:\EduProctor\src\EduProctor.Core\obj\Debug\net8.0\ref\EduProctor.Core.dll

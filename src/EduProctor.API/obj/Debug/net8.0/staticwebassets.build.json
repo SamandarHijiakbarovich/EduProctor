@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "PRVvEvc+RWsijf46wNElJvsTpG4dTjkSZXMXUUUFo88=",
+  "Source": "EduProctor.API",
+  "BasePath": "_content/EduProctor.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

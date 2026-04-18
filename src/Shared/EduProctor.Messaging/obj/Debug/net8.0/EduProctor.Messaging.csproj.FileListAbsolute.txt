@@ -1,0 +1,13 @@
+D:\EduProctor\src\Shared\EduProctor.Messaging\bin\Debug\net8.0\EduProctor.Messaging.deps.json
+D:\EduProctor\src\Shared\EduProctor.Messaging\bin\Debug\net8.0\EduProctor.Messaging.dll
+D:\EduProctor\src\Shared\EduProctor.Messaging\bin\Debug\net8.0\EduProctor.Messaging.pdb
+D:\EduProctor\src\Shared\EduProctor.Messaging\obj\Debug\net8.0\EduProctor.Messaging.csproj.AssemblyReference.cache
+D:\EduProctor\src\Shared\EduProctor.Messaging\obj\Debug\net8.0\EduProctor.Messaging.GeneratedMSBuildEditorConfig.editorconfig
+D:\EduProctor\src\Shared\EduProctor.Messaging\obj\Debug\net8.0\EduProctor.Messaging.AssemblyInfoInputs.cache
+D:\EduProctor\src\Shared\EduProctor.Messaging\obj\Debug\net8.0\EduProctor.Messaging.AssemblyInfo.cs
+D:\EduProctor\src\Shared\EduProctor.Messaging\obj\Debug\net8.0\EduProctor.Messaging.csproj.CoreCompileInputs.cache
+D:\EduProctor\src\Shared\EduProctor.Messaging\obj\Debug\net8.0\EduProctor.Messaging.sourcelink.json
+D:\EduProctor\src\Shared\EduProctor.Messaging\obj\Debug\net8.0\EduProctor.Messaging.dll
+D:\EduProctor\src\Shared\EduProctor.Messaging\obj\Debug\net8.0\refint\EduProctor.Messaging.dll
+D:\EduProctor\src\Shared\EduProctor.Messaging\obj\Debug\net8.0\EduProctor.Messaging.pdb
+D:\EduProctor\src\Shared\EduProctor.Messaging\obj\Debug\net8.0\ref\EduProctor.Messaging.dll

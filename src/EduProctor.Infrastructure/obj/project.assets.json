@@ -927,6 +927,19 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "EduProctor.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EduProctor.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EduProctor.Core.dll": {}
+        }
       }
     }
   },
@@ -2400,10 +2413,16 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "EduProctor.Core/1.0.0": {
+      "type": "project",
+      "path": "../EduProctor.Core/EduProctor.Core.csproj",
+      "msbuildProject": "../EduProctor.Core/EduProctor.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "EduProctor.Core >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.0",
@@ -2444,7 +2463,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\EduProctor\\src\\EduProctor.Core\\EduProctor.Core.csproj": {
+              "projectPath": "D:\\EduProctor\\src\\EduProctor.Core\\EduProctor.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
