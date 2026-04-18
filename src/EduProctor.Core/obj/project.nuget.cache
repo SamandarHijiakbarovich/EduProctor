@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Km9ngSiONwQ=",
+  "success": true,
+  "projectFilePath": "D:\\EduProctor\\src\\EduProctor.Core\\EduProctor.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Samandar\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
