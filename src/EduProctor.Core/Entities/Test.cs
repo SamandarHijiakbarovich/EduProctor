@@ -28,5 +28,6 @@ namespace EduProctor.Core.Entities
         public virtual Organization Organization { get; set; } = null!;
         public virtual ICollection<Question> Questions { get; set; } = new List<Question>();
         public virtual ICollection<ExamSession> ExamSessions { get; set; } = new List<ExamSession>();
+        public virtual ICollection<Group> Groups { get; set; } = new List<Group>();
     }
 }

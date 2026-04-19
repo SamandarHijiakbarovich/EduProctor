@@ -8,7 +8,6 @@ D:\EduProctor\tests\EduProctor.UnitTests\bin\Debug\net8.0\EduProctor.UnitTests.d
 D:\EduProctor\tests\EduProctor.UnitTests\bin\Debug\net8.0\EduProctor.UnitTests.runtimeconfig.json
 D:\EduProctor\tests\EduProctor.UnitTests\bin\Debug\net8.0\EduProctor.UnitTests.dll
 D:\EduProctor\tests\EduProctor.UnitTests\bin\Debug\net8.0\EduProctor.UnitTests.pdb
-D:\EduProctor\tests\EduProctor.UnitTests\bin\Debug\net8.0\AutoMapper.dll
 D:\EduProctor\tests\EduProctor.UnitTests\bin\Debug\net8.0\BCrypt.Net-Next.dll
 D:\EduProctor\tests\EduProctor.UnitTests\bin\Debug\net8.0\Castle.Core.dll
 D:\EduProctor\tests\EduProctor.UnitTests\bin\Debug\net8.0\FluentAssertions.dll
@@ -145,3 +144,6 @@ D:\EduProctor\tests\EduProctor.UnitTests\obj\Debug\net8.0\refint\EduProctor.Unit
 D:\EduProctor\tests\EduProctor.UnitTests\obj\Debug\net8.0\EduProctor.UnitTests.pdb
 D:\EduProctor\tests\EduProctor.UnitTests\obj\Debug\net8.0\EduProctor.UnitTests.genruntimeconfig.cache
 D:\EduProctor\tests\EduProctor.UnitTests\obj\Debug\net8.0\ref\EduProctor.UnitTests.dll
+D:\EduProctor\tests\EduProctor.UnitTests\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+D:\EduProctor\tests\EduProctor.UnitTests\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\EduProctor\tests\EduProctor.UnitTests\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll

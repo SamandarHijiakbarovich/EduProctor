@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EduProctor.UnitTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1529f9cea6fbbb1137fcc16380c4f7c4935b30d2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aaddbafdcec5d4b289d071b99add99c7527b0da3")]
 [assembly: System.Reflection.AssemblyProductAttribute("EduProctor.UnitTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EduProctor.UnitTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

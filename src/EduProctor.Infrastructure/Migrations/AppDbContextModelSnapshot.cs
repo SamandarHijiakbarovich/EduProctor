@@ -190,6 +190,10 @@ namespace EduProctor.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<int>("AdminCount")
                         .HasColumnType("integer");
 
@@ -223,6 +227,9 @@ namespace EduProctor.Infrastructure.Migrations
                         .HasColumnType("integer");
 
                     b.Property<int>("StudentCount")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("TestCount")
                         .HasColumnType("integer");
 
                     b.Property<DateTime?>("UpdatedAt")
@@ -457,6 +464,21 @@ namespace EduProctor.Infrastructure.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("GroupTest", b =>
+                {
+                    b.Property<Guid>("GroupsId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("TestsId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("GroupsId", "TestsId");
+
+                    b.HasIndex("TestsId");
+
+                    b.ToTable("TestGroups", (string)null);
+                });
+
             modelBuilder.Entity("EduProctor.Core.Entities.Answer", b =>
                 {
                     b.HasOne("EduProctor.Core.Entities.Question", "Question")
@@ -567,6 +589,21 @@ namespace EduProctor.Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("Organization");
+                });
+
+            modelBuilder.Entity("GroupTest", b =>
+                {
+                    b.HasOne("EduProctor.Core.Entities.Group", null)
+                        .WithMany()
+                        .HasForeignKey("GroupsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EduProctor.Core.Entities.Test", null)
+                        .WithMany()
+                        .HasForeignKey("TestsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("EduProctor.Core.Entities.ExamSession", b =>

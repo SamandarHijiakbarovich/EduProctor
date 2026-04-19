@@ -1,0 +1,10 @@
+2026-04-20 04:08:34.387 +05:00 [INF] Database migrations applied successfully
+2026-04-20 04:08:35.528 +05:00 [INF] Expired exams checked at "2026-04-19T23:08:35.5267383Z"
+2026-04-20 04:10:05.962 +05:00 [WRN] Failed to determine the https port for redirect.
+2026-04-20 04:10:06.012 +05:00 [INF] [f03a2467-fdfd-486a-883f-03c02d5ce992] Request: POST /api/Auth/login | IP: ::1
+2026-04-20 04:10:06.599 +05:00 [ERR] Login xatosi: superadmin@eduproctor.com
+System.Exception: Email yoki parol xato
+   at EduProctor.Services.AuthService.LoginAsync(LoginDto dto) in D:\EduProctor\src\EduProctor.Services\AuthService.cs:line 56
+   at EduProctor.API.Controllers.AuthController.Login(LoginDto dto) in D:\EduProctor\src\EduProctor.API\Controllers\AuthController.cs:line 42
+2026-04-20 04:10:06.713 +05:00 [INF] [f03a2467-fdfd-486a-883f-03c02d5ce992] Response: 400 | Duration: 702ms
+2026-04-20 04:13:35.594 +05:00 [INF] Expired exams checked at "2026-04-19T23:13:35.5940343Z"

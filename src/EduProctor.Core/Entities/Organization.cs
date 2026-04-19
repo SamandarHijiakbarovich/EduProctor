@@ -17,6 +17,8 @@ public class Organization:BaseEntity
     public string? Phone { get; set; }
     public int AdminCount { get; set; } = 0;
     public int StudentCount { get; set; } = 0;
+    public int TestCount { get; set; } = 0;
+    public string Address { get; set; } = string.Empty;
     public OrganizationStatus Status { get; set; } = OrganizationStatus.Pending;
     public JsonDocument? Settings { get; set; }
 

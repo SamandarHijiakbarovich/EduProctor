@@ -52,5 +52,10 @@ public class AppDbContext : DbContext
 
         modelBuilder.Entity<ProctoringEvent>()
             .HasIndex(p => new { p.SessionId, p.Timestamp });
+
+        modelBuilder.Entity<Test>()
+            .HasMany(t => t.Groups)
+            .WithMany(g => g.Tests)
+            .UsingEntity(j => j.ToTable("TestGroups"));
     }
 }

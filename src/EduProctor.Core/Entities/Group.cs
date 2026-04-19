@@ -16,5 +16,6 @@ namespace EduProctor.Core.Entities
         // Navigation
         public virtual Organization Organization { get; set; } = null!;
         public virtual ICollection<GroupMember> Members { get; set; } = new List<GroupMember>();
+        public virtual ICollection<Test> Tests { get; set; } = new List<Test>();
     }
 }

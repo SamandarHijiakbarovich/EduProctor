@@ -317,7 +317,6 @@ D:\EduProctor\tests\EduProctor.IntegrationTests\bin\Debug\net8.0\refs\System.Xml
 D:\EduProctor\tests\EduProctor.IntegrationTests\bin\Debug\net8.0\refs\System.Xml.XPath.XDocument.dll
 D:\EduProctor\tests\EduProctor.IntegrationTests\bin\Debug\net8.0\refs\WindowsBase.dll
 D:\EduProctor\tests\EduProctor.IntegrationTests\bin\Debug\net8.0\HealthChecks.Redis.dll
-D:\EduProctor\tests\EduProctor.IntegrationTests\bin\Debug\net8.0\AutoMapper.dll
 D:\EduProctor\tests\EduProctor.IntegrationTests\bin\Debug\net8.0\BCrypt.Net-Next.dll
 D:\EduProctor\tests\EduProctor.IntegrationTests\bin\Debug\net8.0\Docker.DotNet.dll
 D:\EduProctor\tests\EduProctor.IntegrationTests\bin\Debug\net8.0\Docker.DotNet.X509.dll
@@ -468,3 +467,16 @@ D:\EduProctor\tests\EduProctor.IntegrationTests\obj\Debug\net8.0\refint\EduProct
 D:\EduProctor\tests\EduProctor.IntegrationTests\obj\Debug\net8.0\EduProctor.IntegrationTests.pdb
 D:\EduProctor\tests\EduProctor.IntegrationTests\obj\Debug\net8.0\EduProctor.IntegrationTests.genruntimeconfig.cache
 D:\EduProctor\tests\EduProctor.IntegrationTests\obj\Debug\net8.0\ref\EduProctor.IntegrationTests.dll
+D:\EduProctor\tests\EduProctor.IntegrationTests\bin\Debug\net8.0\HealthChecks.UI.dll
+D:\EduProctor\tests\EduProctor.IntegrationTests\bin\Debug\net8.0\HealthChecks.UI.Client.dll
+D:\EduProctor\tests\EduProctor.IntegrationTests\bin\Debug\net8.0\HealthChecks.UI.Core.dll
+D:\EduProctor\tests\EduProctor.IntegrationTests\bin\Debug\net8.0\HealthChecks.UI.Data.dll
+D:\EduProctor\tests\EduProctor.IntegrationTests\bin\Debug\net8.0\HealthChecks.UI.InMemory.Storage.dll
+D:\EduProctor\tests\EduProctor.IntegrationTests\bin\Debug\net8.0\HealthChecks.Uris.dll
+D:\EduProctor\tests\EduProctor.IntegrationTests\bin\Debug\net8.0\Fractions.dll
+D:\EduProctor\tests\EduProctor.IntegrationTests\bin\Debug\net8.0\IdentityModel.dll
+D:\EduProctor\tests\EduProctor.IntegrationTests\bin\Debug\net8.0\IdentityModel.OidcClient.dll
+D:\EduProctor\tests\EduProctor.IntegrationTests\bin\Debug\net8.0\KubernetesClient.dll
+D:\EduProctor\tests\EduProctor.IntegrationTests\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+D:\EduProctor\tests\EduProctor.IntegrationTests\bin\Debug\net8.0\Prometheus.NetStandard.dll
+D:\EduProctor\tests\EduProctor.IntegrationTests\bin\Debug\net8.0\YamlDotNet.dll

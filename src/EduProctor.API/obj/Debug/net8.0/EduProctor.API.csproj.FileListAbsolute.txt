@@ -143,3 +143,16 @@ D:\EduProctor\src\EduProctor.API\obj\Debug\net8.0\refint\EduProctor.API.dll
 D:\EduProctor\src\EduProctor.API\obj\Debug\net8.0\EduProctor.API.pdb
 D:\EduProctor\src\EduProctor.API\obj\Debug\net8.0\EduProctor.API.genruntimeconfig.cache
 D:\EduProctor\src\EduProctor.API\obj\Debug\net8.0\ref\EduProctor.API.dll
+D:\EduProctor\src\EduProctor.API\bin\Debug\net8.0\HealthChecks.UI.dll
+D:\EduProctor\src\EduProctor.API\bin\Debug\net8.0\HealthChecks.UI.Client.dll
+D:\EduProctor\src\EduProctor.API\bin\Debug\net8.0\HealthChecks.UI.Core.dll
+D:\EduProctor\src\EduProctor.API\bin\Debug\net8.0\HealthChecks.UI.Data.dll
+D:\EduProctor\src\EduProctor.API\bin\Debug\net8.0\HealthChecks.UI.InMemory.Storage.dll
+D:\EduProctor\src\EduProctor.API\bin\Debug\net8.0\HealthChecks.Uris.dll
+D:\EduProctor\src\EduProctor.API\bin\Debug\net8.0\Fractions.dll
+D:\EduProctor\src\EduProctor.API\bin\Debug\net8.0\IdentityModel.dll
+D:\EduProctor\src\EduProctor.API\bin\Debug\net8.0\IdentityModel.OidcClient.dll
+D:\EduProctor\src\EduProctor.API\bin\Debug\net8.0\KubernetesClient.dll
+D:\EduProctor\src\EduProctor.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+D:\EduProctor\src\EduProctor.API\bin\Debug\net8.0\Prometheus.NetStandard.dll
+D:\EduProctor\src\EduProctor.API\bin\Debug\net8.0\YamlDotNet.dll
