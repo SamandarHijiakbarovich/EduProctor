@@ -1,0 +1,196 @@
+2026-04-24 00:33:05.261 +05:00 [INF] Database migrations applied successfully
+2026-04-24 00:33:06.960 +05:00 [WRN] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2026-04-24 00:33:08.777 +05:00 [INF] Expired exams checked at "2026-04-23T19:33:08.7758090Z"
+2026-04-24 00:35:41.688 +05:00 [WRN] Failed to determine the https port for redirect.
+2026-04-24 00:35:41.761 +05:00 [INF] [9bc9742b-36b6-43af-b83a-bfb9b51d8298] Request: POST /api/Auth/login | IP: ::1
+2026-04-24 00:35:48.970 +05:00 [INF] [9bc9742b-36b6-43af-b83a-bfb9b51d8298] Response: 200 | Duration: 7212ms
+2026-04-24 00:38:09.055 +05:00 [INF] Expired exams checked at "2026-04-23T19:38:09.0556652Z"
+2026-04-24 00:42:59.616 +05:00 [INF] [58bc7dbf-a6a3-4e2a-a354-14321970a11c] Request: POST /api/Organization | IP: ::1
+2026-04-24 00:42:59.937 +05:00 [ERR] Failed executing DbCommand (59ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime), @p4='?', @p5='?' (DbType = Boolean), @p6='?', @p7='?', @p8='?', @p9='?' (DbType = Object), @p10='?', @p11='?' (DbType = Int32), @p12='?' (DbType = Int32), @p13='?' (DbType = Int32), @p14='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Organizations" ("Id", "Address", "AdminCount", "CreatedAt", "Email", "IsDeleted", "LogoUrl", "Name", "Phone", "Settings", "Slug", "Status", "StudentCount", "TestCount", "UpdatedAt")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2026-04-24 00:43:00.029 +05:00 [ERR] An exception occurred in the database while saving changes for context type 'EduProctor.Infrastructure.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "Address" of relation "Organizations" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "Address" of relation "Organizations" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Organizations
+    ColumnName: Address
+    File: execMain.c
+    Line: 2057
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "Address" of relation "Organizations" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "Address" of relation "Organizations" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Organizations
+    ColumnName: Address
+    File: execMain.c
+    Line: 2057
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-04-24 00:43:00.092 +05:00 [INF] [58bc7dbf-a6a3-4e2a-a354-14321970a11c] Response: 200 | Duration: 477ms
+2026-04-24 00:43:00.262 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23502: null value in column "Address" of relation "Organizations" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23502
+    MessageText: null value in column "Address" of relation "Organizations" violates not-null constraint
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Organizations
+    ColumnName: Address
+    File: execMain.c
+    Line: 2057
+    Routine: ExecConstraints
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at EduProctor.Services.OrganizationService.CreateAsync(CreateOrganizationDto dto) in D:\EduProctor\src\EduProctor.Services\OrganizationService.cs:line 35
+   at EduProctor.API.Controllers.OrganizationController.Create(CreateOrganizationDto dto) in D:\EduProctor\src\EduProctor.API\Controllers\OrganizationController.cs:line 42
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at EduProctor.API.Middleware.SecurityHeadersMiddleware.InvokeAsync(HttpContext context) in D:\EduProctor\src\EduProctor.API\Middleware\SecurityHeadersMiddleware.cs:line 21
+   at EduProctor.API.Middleware.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in D:\EduProctor\src\EduProctor.API\Middleware\RequestLoggingMiddleware.cs:line 31
+   at EduProctor.API.Middleware.RateLimitingMiddleware.InvokeAsync(HttpContext context) in D:\EduProctor\src\EduProctor.API\Middleware\RateLimitingMiddleware.cs:line 44
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Hellang.Middleware.ProblemDetails.ProblemDetailsMiddleware.Invoke(HttpContext context)
+2026-04-24 00:43:09.090 +05:00 [INF] Expired exams checked at "2026-04-23T19:43:09.0908117Z"
+2026-04-24 00:44:54.985 +05:00 [INF] [2a1c0794-ae78-4be8-9d5c-d30658fd3efc] Request: POST /api/Organization | IP: ::1
+2026-04-24 00:44:55.242 +05:00 [INF] [2a1c0794-ae78-4be8-9d5c-d30658fd3efc] Response: 201 | Duration: 256ms
+2026-04-24 00:46:51.469 +05:00 [INF] [a10d52b1-1e98-4cdd-9d12-005980174fcf] Request: GET /api/Organization | IP: ::1
+2026-04-24 00:46:51.590 +05:00 [INF] [a10d52b1-1e98-4cdd-9d12-005980174fcf] Response: 200 | Duration: 121ms
+2026-04-24 00:47:39.739 +05:00 [INF] [6f94f7ad-96fa-4826-b122-6e5deb94eae8] Request: POST /api/Auth/register | IP: ::1
+2026-04-24 00:47:39.919 +05:00 [ERR] Register xatosi: superadmin@eduproctor.com
+System.Exception: Bu email allaqachon ro'yxatdan o'tgan
+   at EduProctor.Services.AuthService.RegisterAsync(RegisterDto dto) in D:\EduProctor\src\EduProctor.Services\AuthService.cs:line 100
+   at EduProctor.API.Controllers.AuthController.Register(RegisterDto dto) in D:\EduProctor\src\EduProctor.API\Controllers\AuthController.cs:line 98
+2026-04-24 00:47:39.931 +05:00 [INF] [6f94f7ad-96fa-4826-b122-6e5deb94eae8] Response: 400 | Duration: 191ms
+2026-04-24 00:48:09.114 +05:00 [INF] Expired exams checked at "2026-04-23T19:48:09.1144079Z"
+2026-04-24 00:49:15.593 +05:00 [INF] [06873cec-a22a-4d07-9305-d546a468131f] Request: POST /api/Test | IP: ::1
+2026-04-24 00:49:15.843 +05:00 [INF] [06873cec-a22a-4d07-9305-d546a468131f] Response: 201 | Duration: 250ms
+2026-04-24 00:51:51.123 +05:00 [INF] [2ca09868-6a60-48aa-8772-5b19785dcc94] Request: POST /api/Test/b315eb68-766e-434c-a464-5e345fb9bd08/questions | IP: ::1
+2026-04-24 00:51:51.180 +05:00 [INF] [2ca09868-6a60-48aa-8772-5b19785dcc94] Response: 401 | Duration: 57ms
+2026-04-24 00:52:38.803 +05:00 [INF] [f39b6557-ee0a-46f1-aa71-c57319698231] Request: POST /api/Auth/login | IP: ::1
+2026-04-24 00:52:39.232 +05:00 [INF] [f39b6557-ee0a-46f1-aa71-c57319698231] Response: 200 | Duration: 430ms
+2026-04-24 00:53:09.134 +05:00 [INF] Expired exams checked at "2026-04-23T19:53:09.1347917Z"
+2026-04-24 00:55:30.684 +05:00 [INF] [84589945-be84-4f16-b59d-c650854fcfd2] Request: POST /api/Test/b315eb68-766e-434c-a464-5e345fb9bd08/questions | IP: ::1
+2026-04-24 00:55:30.695 +05:00 [INF] [84589945-be84-4f16-b59d-c650854fcfd2] Response: 401 | Duration: 11ms
+2026-04-24 00:56:59.341 +05:00 [INF] [0effecae-a8e3-4c8e-91a4-86c29b1f5a67] Request: POST /api/Test/b315eb68-766e-434c-a464-5e345fb9bd08/questions | IP: ::1
+2026-04-24 00:56:59.768 +05:00 [INF] [0effecae-a8e3-4c8e-91a4-86c29b1f5a67] Response: 200 | Duration: 426ms
+2026-04-24 00:57:59.901 +05:00 [INF] [0faa3c93-2e63-48b4-9489-37049e857348] Request: POST /api/Test/b315eb68-766e-434c-a464-5e345fb9bd08/publish | IP: ::1
+2026-04-24 00:58:00.213 +05:00 [INF] [0faa3c93-2e63-48b4-9489-37049e857348] Response: 200 | Duration: 311ms
+2026-04-24 00:58:09.164 +05:00 [INF] Expired exams checked at "2026-04-23T19:58:09.1645817Z"
+2026-04-24 01:00:04.622 +05:00 [INF] [d4b69d82-2d57-4198-a9af-1b5f4404f2da] Request: POST /api/Auth/register | IP: ::1
+2026-04-24 01:00:04.962 +05:00 [INF] [d4b69d82-2d57-4198-a9af-1b5f4404f2da] Response: 201 | Duration: 340ms
+2026-04-24 01:03:09.289 +05:00 [INF] Expired exams checked at "2026-04-23T20:03:09.2895171Z"
+2026-04-24 01:03:17.638 +05:00 [INF] [fabcc253-b2db-48e1-90b5-1440666a1c79] Request: POST /api/Auth/login | IP: ::1
+2026-04-24 01:03:17.960 +05:00 [INF] [fabcc253-b2db-48e1-90b5-1440666a1c79] Response: 200 | Duration: 322ms
+2026-04-24 01:04:14.279 +05:00 [INF] [2da5a6f4-5d72-4ce6-871c-921e8932d3be] Request: POST /api/Exam/start | IP: ::1
+2026-04-24 01:04:14.450 +05:00 [ERR] StartExam xatosi
+System.Exception: Test vaqti tugagan
+   at EduProctor.Services.ExamService.StartExamAsync(Guid userId, StartExamDto dto) in D:\EduProctor\src\EduProctor.Services\ExamService.cs:line 39
+   at EduProctor.API.Controllers.ExamController.StartExam(StartExamDto dto) in D:\EduProctor\src\EduProctor.API\Controllers\ExamController.cs:line 32
+2026-04-24 01:04:14.466 +05:00 [INF] [2da5a6f4-5d72-4ce6-871c-921e8932d3be] Response: 400 | Duration: 186ms
+2026-04-24 01:08:09.310 +05:00 [INF] Expired exams checked at "2026-04-23T20:08:09.3102985Z"
+2026-04-24 01:13:09.363 +05:00 [INF] Expired exams checked at "2026-04-23T20:13:09.3637170Z"
+2026-04-24 01:15:31.698 +05:00 [INF] [374c2c81-e081-41e5-86cc-b484d1c0e8e0] Request: POST /api/Test/b315eb68-766e-434c-a464-5e345fb9bd08/publish | IP: ::1
+2026-04-24 01:15:31.774 +05:00 [ERR] PublishTest xatosi: "b315eb68-766e-434c-a464-5e345fb9bd08"
+System.Exception: Test topilmadi
+   at EduProctor.Services.TestService.GetTestByIdAndOrgAsync(Guid testId, Guid organizationId) in D:\EduProctor\src\EduProctor.Services\TestService.cs:line 221
+   at EduProctor.Services.TestService.PublishTestAsync(Guid testId, Guid organizationId, PublishTestDto dto) in D:\EduProctor\src\EduProctor.Services\TestService.cs:line 189
+   at EduProctor.API.Controllers.TestController.PublishTest(Guid id, PublishTestDto dto) in D:\EduProctor\src\EduProctor.API\Controllers\TestController.cs:line 208
+2026-04-24 01:15:31.791 +05:00 [INF] [374c2c81-e081-41e5-86cc-b484d1c0e8e0] Response: 400 | Duration: 93ms
+2026-04-24 01:15:49.476 +05:00 [INF] [5a0ee995-8df4-4489-b0a3-ae1331342bb2] Request: GET /api/Test | IP: ::1
+2026-04-24 01:15:49.578 +05:00 [INF] [5a0ee995-8df4-4489-b0a3-ae1331342bb2] Response: 200 | Duration: 102ms
+2026-04-24 01:18:09.377 +05:00 [INF] Expired exams checked at "2026-04-23T20:18:09.3776464Z"
+2026-04-24 01:19:42.581 +05:00 [INF] [1a823aa6-d859-4bad-a651-c559c6b1a6b8] Request: POST /api/Group | IP: ::1
+2026-04-24 01:19:42.621 +05:00 [INF] [1a823aa6-d859-4bad-a651-c559c6b1a6b8] Response: 401 | Duration: 39ms
+2026-04-24 01:20:07.382 +05:00 [INF] [9f8b05d7-9344-4404-8798-95e3a1d526b2] Request: POST /api/Auth/refresh | IP: ::1
+2026-04-24 01:20:07.523 +05:00 [INF] [9f8b05d7-9344-4404-8798-95e3a1d526b2] Response: 200 | Duration: 140ms
+2026-04-24 01:22:53.174 +05:00 [INF] [c3a764b9-60b7-4e1a-9c12-ed7f4569f43b] Request: POST /api/Auth/login | IP: ::1
+2026-04-24 01:22:55.120 +05:00 [INF] [c3a764b9-60b7-4e1a-9c12-ed7f4569f43b] Response: 200 | Duration: 1946ms
+2026-04-24 01:23:09.402 +05:00 [INF] Expired exams checked at "2026-04-23T20:23:09.4028697Z"
+2026-04-24 01:23:19.404 +05:00 [INF] [0a415c1e-acd2-47a5-88c0-6a25512a1b59] Request: GET /api/Auth/me | IP: ::1
+2026-04-24 01:23:19.445 +05:00 [INF] [0a415c1e-acd2-47a5-88c0-6a25512a1b59] Response: 401 | Duration: 40ms
+2026-04-24 01:25:18.021 +05:00 [INF] [ef140d13-4479-43f1-911b-78a27c6a35be] Request: POST /api/Group | IP: ::1
+2026-04-24 01:25:18.034 +05:00 [INF] [ef140d13-4479-43f1-911b-78a27c6a35be] Response: 401 | Duration: 12ms

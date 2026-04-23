@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EduProctor.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aaddbafdcec5d4b289d071b99add99c7527b0da3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c0a65c015bd93480ba6fff84736a446e1c09711")]
 [assembly: System.Reflection.AssemblyProductAttribute("EduProctor.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EduProctor.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
